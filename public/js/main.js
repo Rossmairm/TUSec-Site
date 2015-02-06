@@ -45,7 +45,7 @@
             aboutWidth = $about.width(),
             aboutHeight = $about.height(),
             trianglifier = new Trianglify({
-                x_gradient: ['#041932', '#11344f', '#0c263a']
+                x_gradient: ['#9e1b34', '#white', '#white']
             }),
             pattern = trianglifier.generate(
                 aboutWidth,
@@ -55,34 +55,34 @@
         $about.css('backgroundImage', pattern.dataUrl);
     }
 
-    function makeRegisterBackground() {
-        var $register = $('section#register'),
-            registerWidth = $register.width(),
-            registerHeight = $register.height(),
+    function makeCalendarBackground() {
+        var $calendar = $('section#calendar'),
+            calendarWidth = $calendar.width(),
+            calendarHeight = $calendar.height(),
             trianglifier = new Trianglify({
-                x_gradient: ['#5689a5', '#6695af', '#87acc1']
+                x_gradient: ['#9e1b34', '#gray', '#9e431b']
             }),
             pattern = trianglifier.generate(
-                registerWidth,
-                registerHeight
+                calendarWidth,
+                calendarHeight
             );
         // Set the background of the div
-        $register.css('backgroundImage', pattern.dataUrl);
+        $calendar.css('backgroundImage', pattern.dataUrl);
     }
 
-    function makeFaqBackground() {
-        var $faq = $('section#faq'),
-            faqWidth = $faq.width(),
-            faqHeight = $faq.height(),
+    function makeContactBackground() {
+        var $contact = $('section#contact'),
+            contactWidth = $contact.width(),
+            contactHeight = $contact.height(),
             trianglifier = new Trianglify({
-                x_gradient: ['#3b7d95', '#346e83', '#2d5471']
+                x_gradient: ['#9e1b34', '#black', '#9e1b76']
             }),
             pattern = trianglifier.generate(
-                faqWidth,
-                faqHeight
+                contactWidth,
+                contactHeight
             );
         // Set the background of the div
-        $faq.css('backgroundImage', pattern.dataUrl);
+        $contact.css('backgroundImage', pattern.dataUrl);
     }
 
     function setupGoogleMap() {
@@ -138,8 +138,8 @@
 
         // Paint the geometric backgrounds
         makeAboutBackground();
-        makeFaqBackground();
-        makeRegisterBackground();
+        makeContactBackground();
+        makeCalendarBackground();
         // Start the intro animation
         doIntroAnimation();
         // Get the map up
