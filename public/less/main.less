@@ -137,7 +137,7 @@ body {
 
                 .logo {
                     display: inline-block;
-                    background-image: url(/static/img/owl.png);
+                    background-image: url(/static/img/tusec.gif);
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
@@ -403,7 +403,7 @@ body {
         }
 
         &#about {
-            background: lighten(#020d1a, 5%) no-repeat top center;
+            background: lighten(white, 5%) no-repeat top center;
             background-size: cover;
             text-align: center;
             padding: 100px;
@@ -458,91 +458,16 @@ body {
                     color: white;
                 }
             }
-
-            .map {
-                position: relative;
-                width: 100%;
-                height: 400px;
-                background: #cccccc;
-                border-radius: 8px;
-                overflow: hidden;
-
-                @media (max-width: @iphone6plus-width) {
-                    height: 300px;
-                }
-
-                .background {
-                    position: absolute;
-                    top: 0px;
-                    left: 0px;
-                    right: 0px;
-                    bottom: 0px;
-                    border-radius: 8px;
-
-                    #google-map {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 8px;
-
-                        @media (max-width: @iphone6plus-width) {
-                            height: 225px;
-                        }
-                        @media (max-width: @iphone6-width) {
-                            height: 200px;
-                        }
-                    }
-                }
-
-                .overlay {
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0px;
-                    background: white;
-                    border-top-right-radius: 8px;
-                    border-bottom-left-radius: 8px;
-                    padding: 15px 25px;
-                    color: #666666;
-                    font-family: 'Roboto Slab', serif;
-                    font-weight: 300;
-                    font-size: 16px;
-                    text-align: left;
-                    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-
-                    @media (max-width: 600px) {
-                        // Breakpoint for the map overlay width
-                        right: 0px;
-                        border-top-right-radius: 0px;
-                        border-bottom-right-radius: 8px;
-                    }
-
-                    &.safari {
-                        // Safari can't do maps + border radius apparently
-                        border-radius: 0px;
-
-                        @media (max-width: 600px) {
-                            // Breakpoint for the map overlay width
-                            right: 0px;
-                            border-radius: 0px;
-                        }
-                    }
-
-                    a {
-                        font-weight: 400;
-                        text-decoration: none;
-                    }
-
-                    .building {
-                        font-weight: 400;
-                    }
-                }
-            }
         }
 
-        &#faq {
-            background-color: #3F86A0;
+        &#calendar {
+            background: lighten(white, 5%) no-repeat top center;
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            text-align: center;
+            padding: 100px;
+            padding-top: 70px;
+            padding-bottom: 90px;
+            transition: background-image 0.5s;
 
             @media (max-width: @iphone6plus-width) {
                 padding: 40px 5px;
@@ -556,285 +481,40 @@ body {
                 }
             }
 
-            .faq-container {
+            .calendar-container {
                 overflow: hidden;
             }
-
-            .qa {
-                margin-bottom: 30px;
-                background: white;
-                border-radius: 4px;
-                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-                padding: 25px;
-
-                .question {
-                    display: block;
-                    font-family: 'Roboto Slab', serif;
-                    font-size: 22px;
-                    text-align: left;
-                    font-weight: 400;
-                    color: #3F86A0;
-                    margin-bottom: 10px;
-
-                    @media (max-width: 450px) {
-                        text-align: center;
-                        font-size: 26px;
-                    }
-
-                    @media (max-width: 320px) {
-                        font-size: 22px;
-                    }
-                }
-
-                .answer {
-                    display: block;
-                    font-family: 'Roboto Slab', serif;
-                    font-size: 18px;
-                    text-align: left;
-                    font-weight: 300;
-                    color: #666666;
-
-                    @media (max-width: 320px) {
-                        font-size: 18px;
-                    }
-
-                    a {
-                        color: #3F86A0;
-                        text-decoration: none;
-                        font-weight: 400;
-                        transition: color 0.5s;
-
-                        &:hover {
-                            text-decoration: none;
-                            color: lighten(#3F86A0, 10%);
-                        }
-                    }
-
-                    bold {
-                        font-weight: 400;
-                        letter-spacing: 1px;
-                        color: #3F86A0;
-                    }
-
-                    email {
-                        background: #3F86A0;
-                        padding: 6px 14px;
-                        border-radius: 4px;
-                        font-size: 18px;
-
-                        a {
-                            display: inline-block;
-                            color: white;
-                            text-decoration: none;
-                            border-bottom: none;
-                            margin-top: 10px;
-                        }
-                    }
-
-                    a.btn {
-                        display: block;
-                        width: 95%;
-                        color: @red;
-                        background: white;
-                        font-family: 'Roboto Slab', serif;
-                        font-size: 18px;
-                        font-weight: 400;
-                        margin-top: 20px;
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        transition: background-color 0.5s, color 0.5s, border-color 0.5s;
-                        outline: 0 none;
-                        border-color: white;
-
-                        @media (max-width: 320px) {
-                            font-size: 14px;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-
-                        &:hover {
-                            background: darken(@red, 20%);
-                            border-color: darken(@red, 20%);
-                            color: white;
-                        }
-                    }
-                }
-            }
         }
 
-        &#register {
-            background-color: @blue;
+        &#contact {
+            background: lighten(white, 5%) no-repeat top center;
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            text-align: center;
+            padding: 100px;
+            padding-top: 70px;
+            padding-bottom: 90px;
+            transition: background-image 0.5s;
+
+            @media (max-width: @iphone6plus-width) {
+                padding: 40px 5px;
+            }
 
             heading, subheading {
-                color: white;
-            }
+                color: lighten(#9EBCE3, 20%);
 
-            @media (max-width: @iphone6plus-width) {
-                padding: 40px 20px;
-            }
-
-            form {
-                text-align: center;
-
-                button.btn-register {
-                    display: block;
-                    width: 500px;
-                    margin: 0 auto;
-
-                    color: white;
-                    background-color: transparent;
-                    border: 2px solid white;
-                    font-family: 'Roboto Slab', serif;
-                    font-size: 22px;
-                    font-weight: 700;
-                    margin-top: 20px;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                    padding: 10px;
-                    outline: 0 none;
-                    box-shadow: none;
-                    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
-
-                    @media (max-width: 700px) {
-                        width: 100%;
-                    }
-
-                    @media (max-width: 320px) {
-                        font-size: 18px;
-                    }
-
-                    &:hover {
-                        border: none;
-                        padding: 12px;
-                        color: @blue;
-                        background-color: white;
-                        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-                    }
-
-                    &:active {
-                        border: none;
-                        padding: 12px;
-                        color: @orange;
-                        background-color: white;
-                        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5) inset;
-                    }
-                }
-
-                input.form-input {
-                    display: block;
-                    width: 500px;
-                    margin: 0 auto;
-                    text-align: center;
-                    color: #444;
-                    background-color: white;
-                    font-family: 'Roboto Slab', serif;
-                    font-size: 22px;
-                    font-weight: 300;
-                    margin-bottom: 20px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    outline: 0 none;
-                    border: none;
-                    border-radius: 4px;
-
-                    @media (max-width: 700px) {
-                        width: 100%;
-                    }
-
-                    @media (max-width: 320px) {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-
-        &#sponsors {
-            background: white;
-            text-align: center;
-
-            @media (max-width: @iphone6plus-width) {
-                padding: 40px 20px;
-            }
-
-            .btn {
-                display: block;
-                color: white;
-                width: 500px;
-                margin: 15px auto;
-                font-family: 'Roboto Slab', serif;
-                font-weight: 700;
-                font-size: 22px;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                padding: 15px 0px;
-                outline: 0 none;
-                border-width: 0px;
-                transition: background-color 0.5s;
-
-                @media (max-width: 700px) {
-                    width: 100%;
-                }
-                @media (max-width: @iphone6-width) {
-                    font-size: 18px;
-                }
-
-                &:hover {
-                    color: white;
-                }
-
-                &:active {
-                    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5) inset;
+                italics {
+                    font-style: italic;
                 }
             }
 
-            .btn-sponsor {
-                background-color: @dark-blue;
-
-                &:hover {
-                    background: lighten(@dark-blue, 20%);
-                }
-            }
-
-
-            #sponsor-list{
-                margin-bottom: 40px;
-                text-align: center;
-
-                .sponsor-group {
-                    display: inline-block;
-
-                    .sponsor {
-                        margin-bottom: 0px;
-                        text-align: center;
-                        display: inline-block;
-                        padding: 10px 20px;
-                    }
-
-                    .sponsor-5 {
-                        width: 220px;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-
-                    .sponsor-6 {
-                        width: 170px;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
+            .contact-container {
+                overflow: hidden;
             }
         }
     }
 
     footer {
-        background-color: @blue-black;
+        background-color: black;
         color: darken(white, 10%);
         font-family: 'Roboto Slab', serif;
         font-size: 16px;
