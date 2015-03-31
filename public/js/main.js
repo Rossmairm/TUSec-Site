@@ -45,7 +45,7 @@
             aboutWidth = $about.width(),
             aboutHeight = $about.height(),
             trianglifier = new Trianglify({
-                x_gradient: ['#9e1b34', '#white', '#white']
+                x_gradient: ['#372A26', '#6DA0A7', '#4D4D4D']
             }),
             pattern = trianglifier.generate(
                 aboutWidth,
@@ -60,7 +60,7 @@
             calendarWidth = $calendar.width(),
             calendarHeight = $calendar.height(),
             trianglifier = new Trianglify({
-                x_gradient: ['#9e1b34', '#gray', '#9e431b']
+                x_gradient: ['#4D4D4D', '#6DA0A7', '#372A26']
             }),
             pattern = trianglifier.generate(
                 calendarWidth,
@@ -68,21 +68,6 @@
             );
         // Set the background of the div
         $calendar.css('backgroundImage', pattern.dataUrl);
-    }
-
-    function makeContactBackground() {
-        var $contact = $('section#contact'),
-            contactWidth = $contact.width(),
-            contactHeight = $contact.height(),
-            trianglifier = new Trianglify({
-                x_gradient: ['#9e1b34', '#black', '#9e1b76']
-            }),
-            pattern = trianglifier.generate(
-                contactWidth,
-                contactHeight
-            );
-        // Set the background of the div
-        $contact.css('backgroundImage', pattern.dataUrl);
     }
 
     function setupGoogleMap() {
@@ -138,7 +123,6 @@
 
         // Paint the geometric backgrounds
         makeAboutBackground();
-        makeContactBackground();
         makeCalendarBackground();
         // Start the intro animation
         doIntroAnimation();

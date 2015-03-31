@@ -1,86 +1,75 @@
 <!doctype html5>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A premier hackathon hosted by Temple University // April 17-19, 2015">
-        <meta name="author" content="Temple Dev">
-        <meta name="keywords" content="temple, computer, science, software, hackathon, owlhacks, mlh">
-        <meta name="theme-color" content="#11344f">
 
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Owlhacks Spring 2015" />
-        <meta property="og:title" content="Owlhacks Spring 2015" />
-        <meta property="og:url" content="http://owlhacks.com" />
-        <meta property="og:description" content="A premier hackathon hosted by Temple University // April 17-19, 2015" />
-        <meta property="og:image" content="http://owlhacks.com/static/img/og.jpg" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Temple University's Cyber Security Club">
+    <meta name="author" content="Temple Dev">
+    <meta name="keywords" content="temple, computer, science, software, hack, tusec, security">
+    <title>TUSec</title>
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="/static/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/main.css" rel="stylesheet" type="text/css">
+    <script src="/static/vendor/modernizr/modernizr.js"></script>
+    <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+</head>
 
-        <title>TUSec</title>
-
-        <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet" type="text/css">
-
-        <link rel="shortcut icon" href="favicon.ico"/>
-        <link href="/static/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="/static/main.css" rel="stylesheet" type="text/css">
-
-        <script src="/static/vendor/modernizr/modernizr.js"></script>
-        <script src="//maps.google.com/maps/api/js?sensor=true"></script>
-    </head>
-    <body>
-        <section id="splash">
-            <div class="info concealed">
-                <div class="logo"></div>
-                <div class="text">
-                    <h1>TUSec</h1>
-                    <h2>Temple University's Security Club</h2>
-					<a href="http://owlhacks.com/register">
-                   		 <button class="btn btn-register" href="http://owlhacks.com/register"> Register </button>
-					</a>
-                </div>
+<body>
+    <section id="splash">
+        <div class="info concealed">
+            <div class="logo"></div>
+            <div class="text">
+                <h1>TUSec</h1>
+                <h2>Cyber Security Club Temple University</h2>
+                <a href="/register">
+                    <button class="btn btn-register" href="/register"> Register </button>
+                </a>
             </div>
-            <div class="learn-more concealed">
-                <span class="text">Learn More</span>
-                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-            </div>
-        </section>
-        <section id="about">
-            <div class="slogan">About Us</div>
-            <div class="description">
-                TUSec is Temple University's computer security oranization ran by students at Temple University.
-            </div>
-        </section>
-        <section id="calendar">
-            <heading>Upcoming Events</heading>
-            <div class="calendar-container">
-            </div>
-        </section>
-        <section id="contact">
-            <heading>Contact Us</heading>
-            <div class="contact-container">
-                
-            </div>
-        </section>
-        <footer>
-            <span>Made with</span> <span class="glyphicon glyphicon-heart"></span> <span>by</span> <span id="tusec-icon"></span> <span>in Philadelphia</span>
-        </footer>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        </div>
+        <div class="learn-more concealed">
+            <span class="text">Learn More</span>
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        </div>
+    </section>
+    <section id="about">
+        <div class="slogan">Hack Somthing!</div>
+        <div class="description">
+            The purpose of this organization shall be to gather a growing group of students interested in the IT security field. By incorporating various interactive workshops, guess speaker lectures, and capture-the-flag events, students will have many takeaways with each semester. Workshops will allow for each student to implement and demonstrate new concepts, while guest speakers will contribute with real world experience. By attending and even hosting capture-the-flag events, students can test their knowledge and get even more hands-on experience. With the growing number of students becoming interested in this field, TUsec will be a great start for the beginner and the advanced.
+        </div>
+    </section>
+    <section id="calendar">
+        <heading>Upcoming Events</heading>
+        <div class="calendar-container">
+            <iframe src="https://www.google.com/calendar/embed?src=a8bht391sjjnfodbmjbpvt6ngo%40group.calendar.google.com&ctz=America/New_York" width="800" height="600" bgcolor="#BD8D46" frameBorder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+    <footer>
+        <span>Made with</span> <span class="glyphicon glyphicon-heart"></span> <span>by</span> <span id="tusec-icon"></span> <span>in Philadelphia</span>
+    </footer>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-56300376-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+    ga('create', 'UA-56300376-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/static/vendor/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="/static/vendor/d3/d3.min.js"></script>
+    <script src="/static/vendor/trianglify/trianglify.min.js"></script>
+    <script src="/static/main.js"></script>
+</body>
 
-        <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="/static/vendor/jquery.easing/js/jquery.easing.min.js"></script>
-        <script src="/static/vendor/d3/d3.min.js"></script>
-        <script src="/static/vendor/trianglify/trianglify.min.js"></script>
-        <script src="/static/main.js"></script>
-    </body>
 </html>

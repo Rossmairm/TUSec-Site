@@ -15,8 +15,8 @@ app.get('/', function(req, res) {
     res.status(200).sendFile(path.join(__dirname, 'dist', 'pages', 'index.html'));
 });
 
-app.get('/sponsor.pdf', function(req, res) {
-    res.status(200).sendFile(path.join(__dirname, 'dist', 'files', 'sponsor.pdf'));
+app.get('/register', function(req, res) {
+    res.status(200).sendFile(path.join(__dirname, 'dist', 'pages', 'register.html'));
 });
 
 app.get('/*', function(req, res) {
