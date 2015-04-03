@@ -1,29 +1,11 @@
 {
-  "name": "owlhacks-site",
+  "name": "tusec-site",
   "version": "1.0.0",
-  "description": "The site owlhacks site. Its dy-no-mite.",
+  "description": "Here is TUsec's website!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OwlHacks/site.git"
-  },
-  "keywords": [
-    "owlhacks",
-    "temple",
-    "acm",
-    "mlh",
-    "hackathons",
-    "bacon"
-  ],
-  "author": "OwlHacks Planning Committee",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/OwlHacks/site/issues"
-  },
-  "homepage": "https://github.com/OwlHacks/site",
   "devDependencies": {
     "async": "^0.9.0",
     "body-parser": "^1.9.2",
