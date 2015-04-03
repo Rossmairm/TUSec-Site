@@ -3,8 +3,6 @@ var friend = require('port-friends'),
     path = require('path'),
     favicon = require('serve-favicon');
 
-var subscribe = require('./routes/subscribe');
-
 var app = express();
 
 app.set('port', process.env.PORT || 80);
